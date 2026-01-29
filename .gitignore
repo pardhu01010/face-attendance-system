@@ -44,3 +44,4 @@ runs/
 # uv / tooling (optional but clean)
 # ================================
 .uv/
+uv.lock
