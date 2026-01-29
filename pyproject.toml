@@ -1,0 +1,14 @@
+[project]
+name = "open-cv-main"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "deepface>=0.0.98",
+    "mediapipe==0.10.9",
+    "tf-keras>=2.19.0",
+    "pandas",
+    "opencv-python",
+    "scipy",
+]
