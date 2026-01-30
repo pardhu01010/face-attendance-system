@@ -55,13 +55,7 @@ face-attendance-system/
 
 ### Setup
 
-1. Clone the repository:
-```bash
-git clone <your-repo-url>
-cd face-attendance-system
-```
-
-2. Install dependencies using `uv` (recommended):
+1. Install dependencies using `uv` (recommended):
 ```bash
 uv sync
 ```
@@ -71,7 +65,7 @@ Or install manually using pip:
 pip install deepface mediapipe==0.10.9 tf-keras pandas opencv-python scipy ultralytics
 ```
 
-3. Download YOLO model (if not already present):
+2. Download YOLO model (if not already present):
    - The `yolov8n.pt` file should be in the project root
    - It will be automatically downloaded on first use if missing
 
