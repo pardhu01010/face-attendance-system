@@ -220,17 +220,9 @@ Jane Smith,2024-01-15,14:31:10
 - **Privacy**: Face embeddings are stored locally in the `embeddings/` directory
 - **Model**: Uses Facenet model from DeepFace library (pre-trained, no training required)
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-[Specify your license here]
-
 ## 👤 Author
 
-[Your Name]
+[pardhu01010]
 
 ---
 
