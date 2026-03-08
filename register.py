@@ -14,6 +14,7 @@ import os
 from deepface import DeepFace
 
 # ================= CONFIG =================
+
 SAMPLES_REQUIRED = 10
 FONT = cv2.FONT_HERSHEY_SIMPLEX
 # =========================================
