@@ -57,7 +57,8 @@ while True:
     ret, frame = cap.read()
     if not ret:
         break
-
+    
+    
     frame_count += 1
     rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     result = mp_face.process(rgb)
