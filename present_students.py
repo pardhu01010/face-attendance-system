@@ -44,7 +44,7 @@ cap = cv2.VideoCapture(0)
 frame_count = 0
 
 # -------- STATE CACHE --------
-last_results = {}  # key: box index → (label, color)
+last_results = {}  
 
 
 # ================= MAIN LOOP =================
@@ -108,6 +108,5 @@ while True:
 
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
-
 cap.release()
 cv2.destroyAllWindows()
