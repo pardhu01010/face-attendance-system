@@ -17,6 +17,7 @@ from similarity import cosine_sim
 from ultralytics import YOLO
 from datetime import datetime
 
+
 # ================= CONFIG =================
 THRESHOLD = 0.7
 FRAME_SKIP = 10               
