@@ -8,3 +8,4 @@ def euclidean_l2(a, b):
     a = a / np.linalg.norm(a)
     b = b / np.linalg.norm(b)
     return np.linalg.norm(a - b)
+
