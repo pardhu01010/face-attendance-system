@@ -22,7 +22,6 @@ THRESHOLD = 0.7
 FRAME_SKIP = 10               
 FONT = cv2.FONT_HERSHEY_SIMPLEX
 
-
 # Load YOLO (person detector)
 yolo = YOLO("yolov8n.pt")
 
