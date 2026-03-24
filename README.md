@@ -227,4 +227,3 @@ Jane Smith,2024-01-15,14:31:10
 ---
 
 **Made with ❤️ using Python, MediaPipe, Open-CV and DeepFace**
-
