@@ -5,7 +5,8 @@ import pandas as pd
 import os
 from typing import List, Annotated
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
+from fastapi.staticfiles import StaticFiles
 from deepface import DeepFace
 from datetime import datetime
 from threading import Lock
@@ -25,6 +26,10 @@ os.environ["OPENCV_VIDEOIO_PRIORITY_BACKEND"] = "0"
 os.environ["QT_QPA_PLATFORM"] = "offscreen"
 
 app = FastAPI(title="Face Attendance API")
+
+# Setup UI serving
+os.makedirs("static", exist_ok=True)
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # Initialize global models
 mp_face = mp.solutions.face_detection.FaceDetection(
@@ -67,6 +72,11 @@ def get_face_roi(image_np):
     return face
 
 @app.get("/")
+def serve_ui():
+    """Serve the sleek HTML UI"""
+    return FileResponse("static/index.html")
+
+@app.get("/health")
 def health_check():
     """Health check for Render deployment"""
     return {"status": "ok", "message": "Face Attendance API is running"}
