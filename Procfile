@@ -1,1 +1,1 @@
-web: uv run gunicorn app:app
+web: uv run gunicorn app:app -w 4 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT
